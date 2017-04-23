@@ -1,0 +1,43 @@
+
+    <ion-pane>
+       <ion-header-bar class="bar-stable">
+   <buttom class="icon ion-android-arrow-back button button-clear" ui-sref="mainscreen"></buttom>
+       
+        <h1 class="title">Reservations</h1>
+
+<!--         <buttom class="icon ion-gear-a button button-clear"></buttom>
+ -->      </ion-header-bar>
+      <ion-content>
+      
+
+
+
+      <label>today </label>
+       <a class="item item-thumbnail-left"  ng-repeat="x in reservations | filter:{'date':bx}">
+            <img src="{{x.img}}">
+            <h2>{{x.name}}</h2>
+            <p><b>{{x.name}}</b> from {{x.city}} Today at <b>{{x.time}}</b> for <b>{{x.people}}</b> Persons. </p>
+            <button class="button button-small button-stable align-right">
+              {{x.refundStatus ? ' Refound ':'Not Refound'}}
+            </button>
+          </a>
+      <label>Future </label>
+       <a class="item item-thumbnail-left" href="#"  ng-repeat="x in filteredFuture()">
+            <img src="{{x.img}}">
+            <h2>{{x.name}}</h2>
+            <p><b>{{x.name}}</b> from {{x.city}} Today at <b>{{x.time}}</b> for <b>{{x.people}}</b> Persons. </p>
+            <button class="button button-small button-stable align-right">
+              {{x.refundStatus ? ' Refound ':'Not Refound'}}
+            </button>
+          </a>
+      <label>Past </label>
+       <a class="item item-thumbnail-left" href="#">
+            <img src="http://images.clipartnet.com/restaurant-clip-art-cartoon-restaurant-vector-6-cartoons-vector-free-download-600x600_5ae888.jpg">
+            <h2>Pretty Hate Machine</h2>
+            <p>Nine Inch Nails</p>
+          </a>
+     
+     
+      
+      </ion-content>
+    </ion-pane>

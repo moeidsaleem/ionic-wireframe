@@ -1,0 +1,26 @@
+    <ion-pane>
+  <ion-header-bar class="bar-stable">
+       <button class="icon ion-android-arrow-back button button-clear" ui-sref="setting"></button>
+        <h1 class="title">Edit Credit card info</h1>
+<!--         <buttom class="icon ion-gear-a button button-clear"></buttom>
+ -->      </ion-header-bar>
+      <ion-content>
+    <ion-radio ng-model="choice" ng-value="{{x.creditCards}}" ng-repeat="x in creditCards">{{x.name}} - - - {{x.num}}</ion-radio>
+
+ 
+   
+      
+        <div style="padding:10px;margin:3px">
+        <button class="button button-stable"  >
+          Save
+        </button>
+            <button class="align-right button button-energized" ui-sref="newcard">
+      Add new card 
+    </button>
+    
+       </center>
+      
+      </ion-content>
+    </ion-pane>
+
+

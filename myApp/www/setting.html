@@ -1,0 +1,86 @@
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <button class="icon ion-android-arrow-back button button-clear" ui-sref="mainscreen"></button>
+        <h1 class="title">Setting</h1>
+<!--         <buttom class="icon ion-gear-a button button-clear"></buttom>
+ -->      </ion-header-bar>
+      <ion-content>
+     
+      
+
+      <div class="list">
+      <center><ion-item class="item" >  
+              <img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/profile/photos/39561113/original/LOGO2.jpg" style="border-radius:80%;">                
+</ion-item></center>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Name" ng-model="user.name">
+        </label>
+       
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="email" ng-model="user.email">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input type="hidden" placeholder="Change Password" ng-model="user.password" disabled="">
+          <a class="button button-outline icon-right ion-navicon button-stable" ui-sref="password">Change Password</a>
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Phone number</span>
+          <input type="text" placeholder="Phone number" ng-model="user.phone">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Credit Card</span>
+          <input type="hidden" placeholder="Card number" ng-model="user.card">
+           <a class="button button-outline icon-right ion-navicon button-stable" ui-sref="creditcard">Edit Credit card</a>
+        </label>
+            <label class="item item-input item-floating-label">
+          <a hui-sref="creditcard"><span class="input-label" disabled>Credit card info</span>
+        </label> </a>
+           
+              <label class="item item-input item-select">
+                <div class="input-label">
+                  Language
+                </div>
+                <select>
+                  <option ng-repeat="x in languages">{{x}}</option>
+                  
+                </select>
+              </label>
+            
+        <div class="row responsive-sm">
+          <div class="col">
+            <label class="item item-input">
+                <span class="input-label">Expiry date</span>
+                <input type="date">
+            </label>
+          </div> 
+
+          <div class="col">
+            <label class="item item-input item-floating-label" >
+                <input type="text" placeholder="cvv">
+            </label>
+          </div> 
+        </div>
+       
+      
+        <center>
+        <div class="row">
+        <p class="text-center">
+  <ion-checkbox class="justify-text-center" ng-model="filter.yellow"> Allow push notifications </ion-checkbox>
+      </p>
+         </div>
+        
+      </center>
+
+      
+      
+      </ion-content>
+    </ion-pane>
+
+
+
+  </body>
+</html>
