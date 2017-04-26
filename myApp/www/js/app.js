@@ -180,7 +180,7 @@ angular.module('starter', ['ionic'])
     hours:'10:00am - 11:00pm',
     specific:'Asian Food',
     imgIco:'https://foursquare.com/img/categories/food/default_256.png',
-    img:'https://media-cdn.tripadvisor.com/media/photo-s/06/91/cb/5d/ali-baba-restaurant.jpg',
+    img:'img/res.jpg',
     description:'This is a great restaurant and sponsered by one of the top enterprenuer of the World. Tast the World best asian delights and have the asian experience.. ',
     notShowFee:'123 lei',
     minimumPeople:'50%',
