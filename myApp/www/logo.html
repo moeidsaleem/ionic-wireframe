@@ -1,8 +1,9 @@
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <buttom class="icon ion-navicon button button-clear" menu-toggle="left"></buttom>
-        <h1 class="title">Registeration</h1>
+  <button class="icon ion-navicon button button-clear"  ng-click="toggleLeft()"></button>
+   <h1 class="title">Welcome</h1>
+
 <!--         <buttom class="icon ion-gear-a button button-clear"></buttom>
  -->      </ion-header-bar>
       <ion-content>
@@ -10,7 +11,13 @@
       
 
       <center>
-      <img ui-sref="signup" src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/profile/photos/39561113/original/LOGO2.jpg" style="padding-top:60px;border-radius: 360px;margin-bottom: 20px">
+      <img ui-sref="signup" src="img/logo.png" style="padding-top:60px;border-radius: 360px;margin-bottom: 20px">
+      <button class="button button-full button-stable" ui-sref="login">
+        Login
+      </button>
+      <button class="button button-full button-stable" ui-sref="signup">
+        Register
+      </button>
       </div>
             <h4>Welcome!</h4>
 </center>
