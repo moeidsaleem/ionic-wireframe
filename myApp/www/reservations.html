@@ -1,7 +1,7 @@
 
     <ion-pane>
-       <ion-header-bar class="bar-stable">
-   <buttom class="icon ion-android-arrow-back button button-clear" ui-sref="mainscreen"></buttom>
+       <ion-header-bar class="bar-stable" style="background-color:#FFB240;">
+   <button class="icon ion-android-arrow-back button button-clear" ui-sref="mainscreen" style="background-color:#FFB240;"></button>
        
         <h1 class="title">Reservations</h1>
 
@@ -17,7 +17,7 @@
             <img src="{{x.img}}">
             <h2>{{x.name}}</h2>
             <p><b>{{x.name}}</b> from {{x.city}} Today at <b>{{x.time}}</b> for <b>{{x.people}}</b> Persons. </p>
-            <button class="button button-small button-stable align-right">
+            <button class="button button-small button-stable align-right" style="background-color:#FFB240;color:">
               {{x.refundStatus ? ' Refound ':'Not Refound'}}
             </button>
           </a>
@@ -26,7 +26,7 @@
             <img src="{{x.img}}">
             <h2>{{x.name}}</h2>
             <p><b>{{x.name}}</b> from {{x.city}} Today at <b>{{x.time}}</b> for <b>{{x.people}}</b> Persons. </p>
-            <button class="button button-small button-stable align-right">
+            <button class="button button-small button-stable align-right" style="background-color:#FFB240;color:">
               {{x.refundStatus ? ' Refound ':'Not Refound'}}
             </button>
           </a>
