@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<section style="position:center;text-align: center">
+      <div >
+      <img src="img/logo.png" style="padding-top:60px">
+      </div>
+    
+      
+<form (ngSubmit)="itemTapped($event)">
+      <ion-item>
+        <ion-label>Company Name</ion-label>
+        <ion-input type="text" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CUI</ion-label>
+        <ion-input name="password" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Commercial Registery Number</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>IBAN</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Bank</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone Number</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Website</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Add Picture</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      
+      
+      <button ion-button type="submit" block>Create Account</button>
+    </form>
+      
+       </section>
+    <button ion-button color="primary" (click)="itemTapped($event)">Toggle Menu</button>
+ 
+
+</ion-content>
