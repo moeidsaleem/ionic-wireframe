@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { loginPage } from '../login/login';
+
 
 @Component({
-  selector: 'page-logo-ionic',
-  templateUrl: 'activation.html'
+  selector: 'page-hello-ionic',
+  templateUrl: 'login.html'
 })
-export class ActivationPage {
+export class loginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
-
-   itemTapped(event) {
-   this.navCtrl.push(loginPage);
+   itemTapped(event,item) {
+    //this.navCtrl.push(RegisterPage);
 }
-
-
+ user = {}
+ 
 }
