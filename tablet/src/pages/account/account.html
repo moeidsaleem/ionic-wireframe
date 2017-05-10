@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<section style="position:center;text-align: center">
+
+    
+      
+<form (ngSubmit)="itemTapped($event)">
+      <ion-item>
+        <ion-label>Company Name</ion-label>
+        <ion-input type="text" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CUI</ion-label>
+        <ion-input name="password" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Commercial Registery Number</ion-label>
+        <ion-input name="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-input name="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>IBAN</ion-label>
+        <ion-input name="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Bank</ion-label>
+        <ion-input name="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Phone Number</ion-label>
+        <ion-input name="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Website</ion-label>
+        <ion-input name="text"></ion-input>
+      </ion-item>
+      <ion-item (click)="itemTappedPassword($event)">
+        <ion-label color="primary">Edit Password</ion-label>
+        <ion-input name="password" disabled></ion-input>
+      </ion-item>
+      
+      
+    </form>
+      
+       </section>
+ 
+
+</ion-content>

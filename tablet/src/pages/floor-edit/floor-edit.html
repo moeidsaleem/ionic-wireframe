@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Floor Edit</ion-title>
+  
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div padding>
+  <ion-segment [(ngModel)]="floor">
+    <ion-segment-button value="First Floor">
+      First Floor
+    </ion-segment-button>
+    <ion-segment-button value="Second Floor">
+      Second Floor
+    </ion-segment-button>
+     <ion-segment-button value="Third Floor">
+      Third Floor
+    </ion-segment-button>
+     <ion-segment-button value="Add Floor">
+      Add Floor
+    </ion-segment-button>
+      <ion-segment-button value="">
+      
+    </ion-segment-button>
+  </ion-segment>
+</div>
+      <div [ngSwitch]="floor">
+
+<ion-grid>
+  <ion-row> 
+      <ion-col text-center>
+        <button ion-button fab-center >Add Floor Plan</button>
+        <button ion-button fab-center >Draw Plan</button>
+      </ion-col>
+
+
+  </ion-row>
+  <ion-row>
+    <ion-col col-9>
+     <div *ngSwitchCase="'First Floor'" text-center>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/8b/3f/6a8b3ff3c0e7ea711f1b51b758a82e89.jpg">
+     </div>
+    </ion-col>
+    <ion-col col-3>
+<ion-card>
+    <ion-card-header>
+     <button ion-button icon-only color="royal">
+        <ion-icon name="add-circle">ADD TABLE</ion-icon> 
+      </button>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list >
+        <ion-item  >
+          <img src="img/2chair.jpg" style="width:150px;height:150px">
+        </ion-item>
+        <ion-item >
+          <img src="img/4chair.jpg">
+        </ion-item>
+        <ion-item  >
+          <img src="img/6chair.jpg">
+        </ion-item>
+      </ion-list>
+      
+    </ion-card-content>
+  </ion-card>
+
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+
+  </div>
+
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+   <button ion-button outline (click)="itemTapped($event)">Save Edits</button>
+     
+  </ion-toolbar>
+</ion-footer>

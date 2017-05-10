@@ -4,12 +4,17 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
-import {TestPage } from '../pages/test-page/test';
 import {logoPage } from '../pages/logo/logo';
 import {RegisterPage } from '../pages/register/register';
 import {SignUpPage } from '../pages/signup/signup';
 import {loginPage } from '../pages/login/login';
 import {ActivationPage } from '../pages/activation/activation';
+import { help } from '../pages/help/help';
+import { account } from '../pages/account/account';
+import { setting } from '../pages/setting/setting';
+import {floorStart } from '../pages/floor-start/floor-start';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,10 +40,13 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
-      { title: 'Login', component: loginPage },
-      { title: 'LOGO Page', component: logoPage }
+      { title: 'Home', component: logoPage },
+      { title: 'Floor', component: floorStart },
+      { title: 'Account', component: account },
+      { title: 'help', component: help },
+     { title: 'Setting', component: setting }
+
+
     ];
   }
 

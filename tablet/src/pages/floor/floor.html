@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Floor</ion-title>
+     <ion-buttons end>
+       <button ion-button color="royal">FEE ON/OFF </button>
+      <button ion-button color="royal">Reservations ON/OFF </button>
+      <button ion-button color="royal"> EDIT </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div padding>
+  <ion-segment [(ngModel)]="floor">
+    <ion-segment-button value="First Floor">
+      First Floor
+    </ion-segment-button>
+    <ion-segment-button value="Second Floor">
+      Second Floor
+    </ion-segment-button>
+     <ion-segment-button value="Third Floor">
+      Third Floor
+    </ion-segment-button>
+    
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="floor">
+
+  <div *ngSwitchCase="'First Floor'" text-center>
+ 
+    
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/8b/3f/6a8b3ff3c0e7ea711f1b51b758a82e89.jpg">
+  
+   
+  
+
+
+</div>
+
+
+</div>
+
+</ion-content>
+
+<!--<ion-footer>
+  <ion-toolbar>
+  
+     <button ion-button large >Pen</button>
+     <button ion-button large >Eraser</button>
+     <button ion-button large >Text</button>
+
+    <ion-buttons end>
+      <button ion-button icon-right color="royal" (click)="itemTapped($event)">
+        SAVE DRAWING
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>-->

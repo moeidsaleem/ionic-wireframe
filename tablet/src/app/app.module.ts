@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { TestPage } from '../pages/test-page/test';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { logoPage } from '../pages/logo/logo';
@@ -12,6 +11,16 @@ import { SignUpPage } from '../pages/signup/signup';
 import { RegisterPage } from '../pages/register/register';
 import { ActivationPage } from '../pages/activation/activation';
 import { loginPage } from '../pages/login/login';
+import { floorStart } from '../pages/floor-start/floor-start';
+import { floorEdit } from '../pages/floor-edit/floor-edit';
+import { floor } from '../pages/floor/floor';
+import { setting } from '../pages/setting/setting';
+import { settingPercentage } from '../pages/setting.percentage/setting.percentage';
+import { settingFee } from '../pages/setting.fee/setting.fee';
+import { help } from '../pages/help/help';
+import { account } from '../pages/account/account';
+import { password } from '../pages/password/password';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,13 +30,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    TestPage,
     ListPage,
     logoPage,
     SignUpPage,
     RegisterPage,
     ActivationPage,
-    loginPage
+    loginPage,
+    floorStart,
+    floorEdit,
+    floor,
+    setting,
+    settingPercentage,
+    settingFee,
+    help,
+    account,
+    password
+
   ],
   imports: [
     BrowserModule,
@@ -39,12 +57,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    TestPage,
     logoPage,
     SignUpPage,
     RegisterPage,
     ActivationPage,
-    loginPage
+    loginPage,
+    floorStart,
+    floorEdit,
+    floor,
+     setting,
+    settingPercentage,
+    settingFee,
+    help,
+    account,
+    password
   ],
   providers: [
     StatusBar,
