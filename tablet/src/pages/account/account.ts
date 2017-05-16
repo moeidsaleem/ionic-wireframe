@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {  password } from '../password/password';
 
 
+
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'account.html'

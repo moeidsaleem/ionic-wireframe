@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Floor Edit</ion-title>
+    <ion-title>Floor Notification</ion-title>
   
   </ion-navbar>
 </ion-header>
@@ -31,58 +31,44 @@
   </ion-segment>
 </div>
       <div [ngSwitch]="floor">
-
 <ion-grid>
-  <ion-row> 
-      <ion-col text-center>
-        <button ion-button fab-center >Add Floor Plan</button>
-        <button ion-button fab-center >Draw Plan</button>
-      </ion-col>
-
-
-  </ion-row>
   <ion-row>
-    <ion-col col-9>
+    <ion-col col-12>
      <div *ngSwitchCase="'First Floor'" text-center>
         <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/8b/3f/6a8b3ff3c0e7ea711f1b51b758a82e89.jpg">
      </div>
     </ion-col>
-    <ion-col col-3>
-<ion-card>
-    <ion-card-header>
-     <button ion-button icon-only color="royal">
-        <ion-icon name="add-circle">ADD TABLE</ion-icon> 
-      </button>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list >
-        <ion-item  >
-          <img src="img/2chair.jpg" style="width:150px;height:150px">
-        </ion-item>
-        <ion-item >
-          <img src="img/4chair.jpg">
-        </ion-item>
-        <ion-item  >
-          <img src="img/6chair.jpg">
-        </ion-item>
-      </ion-list>
-      
-    </ion-card-content>
-  </ion-card>
-
-    </ion-col>
-    
   </ion-row>
 </ion-grid>
-
   </div>
 
   
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar text-center>
-   <button ion-button outline (click)="itemTapped($event)">Save Edits</button>
-     
+  <ion-toolbar>
+    <ion-grid> 
+      <ion-row>
+        <ion-col col-3>
+          <span> Name Surname </span>
+          <div> Tips: <ion-icon name="star"></ion-icon> </div>
+        </ion-col>
+        <ion-col col-3>
+           <span> Score </span>
+          <div> Aspect: <ion-icon name="star"></ion-icon> </div>
+        </ion-col>
+        <ion-col col-3>
+           <span> Present in <b> 10 out of 12 </b> </span>
+          <div> Behavior: <ion-icon name="star"></ion-icon> </div>
+        </ion-col>
+
+        <ion-col>
+           <button ion-button >Send Schedule</button>
+           <button ion-button >Deny</button>
+
+           </ion-col>
+        </ion-row> 
+     </ion-grid>
+ 
   </ion-toolbar>
 </ion-footer>
