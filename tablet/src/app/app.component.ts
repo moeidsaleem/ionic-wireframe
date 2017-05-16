@@ -13,6 +13,7 @@ import { help } from '../pages/help/help';
 import { account } from '../pages/account/account';
 import { setting } from '../pages/setting/setting';
 import {floorStart } from '../pages/floor-start/floor-start';
+import {floorNotification } from '../pages/floor-notification/floor-notification';
 
 
 
@@ -43,8 +44,9 @@ export class MyApp {
       { title: 'Home', component: logoPage },
       { title: 'Floor', component: floorStart },
       { title: 'Account', component: account },
+      {title:'Floor Notification', component:floorNotification},    
       { title: 'help', component: help },
-     { title: 'Setting', component: setting }
+      { title: 'Setting', component: setting }
 
 
     ];

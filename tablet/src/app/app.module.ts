@@ -13,6 +13,7 @@ import { ActivationPage } from '../pages/activation/activation';
 import { loginPage } from '../pages/login/login';
 import { floorStart } from '../pages/floor-start/floor-start';
 import { floorEdit } from '../pages/floor-edit/floor-edit';
+import { floorNotification } from '../pages/floor-notification/floor-notification';
 import { floor } from '../pages/floor/floor';
 import { setting } from '../pages/setting/setting';
 import { settingPercentage } from '../pages/setting.percentage/setting.percentage';
@@ -44,7 +45,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     settingFee,
     help,
     account,
-    password
+    password,
+    floorNotification
 
   ],
   imports: [
@@ -70,7 +72,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     settingFee,
     help,
     account,
-    password
+    password,
+    floorNotification
   ],
   providers: [
     StatusBar,
