@@ -1,0 +1,79 @@
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable" style="background-color:#FFB240;">
+       <button class="icon ion-android-arrow-back button button-clear" ui-sref="signup" style="background-color:#FFB240;color:"></button>
+        <h1 class="title">Registeration</h1>
+<!--         <buttom class="icon ion-gear-a button button-clear"></buttom>
+ -->      </ion-header-bar>
+      <ion-content>
+     
+      
+
+      <div class="list">
+      <center><div>
+      <img src="img/logo.png" style="padding-top:60px;border-radius: 360px;margin-bottom: 20px">
+      </div></center>
+    
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Name</span>
+          <input ng-model="reg.name" type="text" placeholder="Name">
+        </label>
+       
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input ng-model="reg.email" type="email" placeholder="email">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Phone number</span>
+          <input ng-model="reg.phone" type="text" placeholder="Phone number">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Card number</span>
+          <input ng-model="reg.cardNumber" type="number" placeholder="Card number">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Credit card name</span>
+          <input ng-model="reg.cardName"type="text" placeholder="credit card name">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input ng-model="reg.password" type="password" placeholder="Password">
+        </label>
+        <div class="row responsive-sm">
+          <div class="col">
+            <label class="item item-input">
+                <span class="input-label">Expiry date</span>
+                <input ng-model="reg.cardExp" type="date">
+            </label>
+          </div> 
+
+          <div class="col">
+            <label class="item item-input item-floating-label" >
+                <input ng-model="reg.cardCvv" type="text" placeholder="cvv">
+            </label>
+          </div> 
+        </div>
+       
+       <div class="row">
+       <button class="button button-stable button-full margin-top" style="background-color:#FFB240;color:" ng-click="signup(reg.email , reg.password)">
+          Register
+        </button>
+        </div>
+
+        <center>
+        <div class="row">
+        <p class="text-center">
+  <ion-checkbox ng-model="filter.yellow"> Accept terms and condition</ion-checkbox>
+      </p>
+         </div>
+         <div class="row">
+      <p> have an account? <b> sign In </b> </p>
+      </div>
+      </center>
+
+      
+      
+      </ion-content>
+    </ion-pane>
+
+

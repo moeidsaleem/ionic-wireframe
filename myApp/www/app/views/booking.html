@@ -1,0 +1,64 @@
+
+
+    <ion-pane>
+     <ion-header-bar class="bar-stable" style="background-color:#FFB240;">
+        <button class="icon ion-chevron-left button button-clear" ui-sref="detail" style="background-color:#FFB240;"></button>
+        <h1 class="title">Book at Ali baba</h1>
+        <button class="icon ion-search button button-clear"  style="background-color:#FFB240;"></button>
+      </ion-header-bar>
+
+
+      <ion-content ng-init="loadDetails()">
+
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Name" ng-model="booking.name">
+        </label>
+       
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="email"  ng-model="booking.email">
+        </label>
+            <label class="item item-input item-floating-label">
+          <span class="input-label">Phone number</span>
+          <input type="text" placeholder="Phone number">
+        </label>
+            
+    
+            <label class="item item-input">
+                <span class="input-label">Date</span>
+                <input type="date" ng-model="booking.date">
+            </label>
+          </div> 
+       
+            <label class="item item-input " >
+              <span class="input-label">Time</span>
+                <input type="time" step="15" ng-model="booking.time" placeholder="Time">
+            </label>
+    
+     
+            <label class="item item-input item-select">
+              <div class="input-label">
+                No. of People
+              </div>
+              <select ng-model="booking.people">
+                <option ng-repeat="list in numberList | limitTo:30">{{list}}</option>
+             
+              </select>
+            </label>
+          
+       
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Special request</span>
+          <input type="email" placeholder="Special Request or comments"  ng-model="user.email">
+        </label>
+     
+
+     <button class="button button-full button-stable" ng-click="dialogCheck()" style="background-color:#FFB240;">
+        request Reservation
+      </button>
+     
+      
+      </ion-content>
+    </ion-pane>

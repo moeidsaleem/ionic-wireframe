@@ -1,0 +1,67 @@
+
+
+    <ion-pane>
+     <ion-header-bar class="bar-stable" style="background-color:#FFB240;">
+        <button class="icon ion-chevron-left button button-clear" ui-sref="mainscreen" style="background-color:#FFB240;"></button>
+        <h1 class="title">Details</h1>
+        <button class="icon ion-search button button-clear" ng-click="toggleRight()" style="background-color:#FFB240;"></button>
+      </ion-header-bar>
+
+      <ion-content ng-init="loadRes()">
+      <div class="list card">
+      
+        <div class="item item-image" ng-init="getRes()">
+          <img src="{{res.img}}">
+        </div>
+      
+        <div class="item item-avatar">
+          <img src="{{res.img}}">
+          <h2>{{res.name}}</h2>
+          <p>{{res.city}}</p>
+        </div>
+      
+        <div class="item item-icon-left assertive padding" href="#" ng-init="lim =20"  style="color:#FFB240;" >
+          <i class="ion-ios-grid-view-outline"></i>
+          Description
+          <p class="margin" > {{res.description | limitTo:lim}} <span ng-click="lim=1200" ng-hide="lim>20">..............more</span> </p>
+        </div>
+        <div class="item item-icon-left assertive margin  " href="#" style="color:#FFB240;">
+          <i class="ion-ios-clock-outline"></i>
+          Opening Hours 
+          <p class="margin"> Daily at {{res.hours}} </p>.
+        </div>
+        <div class="item item-icon-left assertive margin  " href="#" style="color:#FFB240;">
+          <i class="ion-map"></i>
+          Address
+          <p class="margin">{{res.address}} </p>.
+        </div>
+          <div class="item item-icon-left assertive" href="#" style="color:#FFB240;">
+          <i class="ion-map"></i>
+          Specific
+          <p class="margin">{{res.specific}} </p>.
+        </div>
+
+        <div class="row">
+          <div class="col col-50">  <div class="item item-icon-left assertive" href="#" style="color:#FFB240;">
+          <i class="ion-map"></i>
+          Not Showing up Fee
+          <p >{{res.notShowFee}} </p>.
+        </div></div>
+          <div class="col col-50"> <div class="item item-icon-left assertive" href="#" style="color:#FFB240;">
+          <i class="ion-map"></i>
+          Minimum % of people
+          <p >{{res.minimumPeople}} <i class="ion-ios-information-outline"></i>
+ </p>.
+        </div> </div>
+
+      </div>
+      <button class="button button-full button-stable" style="background-color:#FFB240;" ng-click="makeBooking(res)">
+        Book
+      </button>
+      </ion-content>
+    </ion-pane>
+<style>
+a{
+  text-decoration: none;
+
+} </style>
